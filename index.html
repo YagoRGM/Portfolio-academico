@@ -1,260 +1,318 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio - Yago Moraes</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Yago Moraes | Portfólio Acadêmico</title>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <!-- HEADER -->
-    <header id="header">
-        <nav id="navbar">
-            <div class="container">
-                <h1 class="logo">Yago Moraes</h1>
-                <ul class="nav-menu">
-                    <li><a href="#inicio" class="nav-link">Início</a></li>
-                    <li><a href="#sobre" class="nav-link">Sobre</a></li>
-                    <li><a href="#skills" class="nav-link">Habilidades</a></li>
-                    <li><a href="#projetos" class="nav-link">Projetos</a></li>
-                    <li><a href="#contato" class="nav-link">Contato</a></li>
-                </ul>
-                <div class="hamburger">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </div>
-            </div>
-        </nav>
-    </header>
+<div class="blob b1"></div><div class="blob b2"></div>
 
-    <!-- HERO -->
-    <section id="inicio" class="hero">
-        <div class="hero-content">
-            <h1>Yago Moraes</h1>
-            <h2>Desenvolvedor Web Full Stack Jr</h2>
-            <p>Transformando ideias em experiências digitais incríveis</p>
-            <div class="buttons">
-                <a href="#contato" class="btn primary">Entre em Contato</a>
-                <a href="#projetos" class="btn secondary">Ver Projetos</a>
-            </div>
+<nav>
+  <a href="#hero" class="logo">Yago <span>Moraes</span></a>
+  <ul class="nav-links">
+    <li><a href="#about">Sobre</a></li>
+    <li><a href="#skills">Habilidades</a></li>
+    <li><a href="#projects">Projetos</a></li>
+    <li><a href="#experience">Experiência</a></li>
+    <li><a href="#education">Formação</a></li>
+    <li><a href="#extra">Extracurricular</a></li>
+    <li><a href="#contact">Contato</a></li>
+  </ul>
+  <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Ativar modo claro" title="Alternar tema">☼</button>
+</nav>
+
+<main>
+<section id="hero">
+  <div class="container">
+    <img class="photo" src="img/foto.png" alt="Foto de Yago Moraes">
+    <div class="hero-text">
+      <div class="badge-h">Disponível para oportunidades</div>
+      <h1>Yago Roberto Gomes Moraes</h1>
+      <p class="role">Estudante de Análise e Desenvolvimento de Sistemas</p>
+      <p class="hero-desc">Estudante de Análise e Desenvolvimento de Sistemas na FATEC São José dos Campos. Gosto de transformar problemas reais em soluções práticas.</p>
+      <div class="btns">
+        <a href="#projects" class="btn btn-p">Ver projetos</a>
+        <a href="#contact" class="btn btn-o">Contato</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="alt">
+  <div class="container">
+    <p class="tag-sec">SOBRE</p>
+    <h2>Quem sou eu</h2>
+    <div class="about-grid">
+      <div class="info"><h3>Formação atual</h3><p>Tecnologia em Análise e Desenvolvimento de Sistemas, FATEC São José dos Campos (2º semestre). Técnico em Desenvolvimento de Sistemas pelo SENAI Félix Guisard.</p></div>
+      <div class="info"><h3>Objetivos</h3><p>Atuar como desenvolvedor full stack, criando aplicações web úteis e bem estruturadas, e conquistar minha primeira oportunidade de estágio na área.</p></div>
+      <div class="info"><h3>Áreas de interesse</h3><p>Desenvolvimento web (front-end e back-end), banco de dados, integração de APIs e inteligência artificial aplicada.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="container">
+    <p class="tag-sec">TECNOLOGIAS</p>
+    <h2>Competências técnicas</h2>
+    <p class="sub">Tecnologias e ferramentas com as quais já trabalhei ou que venho estudando na faculdade e por conta própria.</p>
+    <div class="grid" id="skills-grid"></div>
+  </div>
+</section>
+
+<section id="projects" class="alt">
+  <div class="container">
+    <p class="tag-sec">PORTFÓLIO</p>
+    <h2>O que eu construí</h2>
+    <p class="sub">Clique em um projeto para ver problema, solução, contribuições e aprendizados.</p>
+    <div class="filters">
+      <button class="fb on" data-f="all">Todos</button>
+      <button class="fb" data-f="API">Projetos integradores (API)</button>
+      <button class="fb" data-f="Acadêmico">Acadêmicos</button>
+      <button class="fb" data-f="Pessoal">Pessoais</button>
+    </div>
+    <div class="bento" id="projects-grid"></div>
+  </div>
+</section>
+
+
+<section id="experience">
+  <div class="container">
+    <p class="tag-sec">EXPERIÊNCIA</p>
+    <h2>Experiência profissional</h2>
+    <article class="experience-card card">
+      <div class="experience-head">
+        <div>
+          <h3>Jovem Aprendiz</h3>
+          <p class="experience-company">Imprima Gráfica</p>
         </div>
-        <div class="scroll-down"><i class="fa-solid fa-computer-mouse"></i></div>
-    </section>
-
-    <!-- SOBRE -->
-    <section id="sobre" class="section about-section">
-        <h2>Sobre mim</h2>
-        <div class="about-content">
-            <div class="about-image">
-                <img src="./img/foto.jfif" alt="Yago Moraes">
-            </div>
-            <div class="about-text">
-                <p>Olá! Sou estudante do 3º ano do Ensino Médio no SESI e curso Técnico em Desenvolvimento de Sistemas
-                    no SENAI Félix Guisard. Apaixonado por tecnologia e programação, gosto de resolver problemas e criar
-                    soluções práticas. Busco desafios para crescer profissionalmente e contribuir com projetos
-                    inovadores. 🚀💻</p>
-            </div>
+        <span class="pill">Março de 2026 — Atual</span>
+      </div>
+      <p class="experience-desc">Atuação em diferentes etapas da rotina da gráfica, com contato com clientes e participação em atividades de produção e criação de materiais.</p>
+      <div class="experience-areas">
+        <div>
+          <h4>Produção</h4>
+          <p>Apoio às atividades operacionais e organização de materiais.</p>
         </div>
-    </section>
-
-    <!-- HABILIDADES -->
-    <section id="skills">
-        <div class="container">
-            <h2 data-aos="fade-up">Minhas Habilidades</h2>
-            <div class="skills-grid">
-                <div class="skill-item" data-aos="zoom-in" data-aos-delay="100">
-                    <i class="fab fa-html5"></i>
-                    <span>HTML5</span>
-                </div>
-                <div class="skill-item" data-aos="zoom-in" data-aos-delay="200">
-                    <i class="fab fa-css3-alt"></i>
-                    <span>CSS3</span>
-                </div>
-                <div class="skill-item" data-aos="zoom-in" data-aos-delay="300">
-                    <i class="fab fa-js"></i>
-                    <span>JavaScript</span>
-                </div>
-                <div class="skill-item" data-aos="zoom-in" data-aos-delay="400">
-                    <i class="fab fa-react"></i>
-                    <span>React</span>
-                </div>
-                <div class="skill-item" data-aos="zoom-in" data-aos-delay="500">
-                    <i class="fab fa-node-js"></i>
-                    <span>Node.js</span>
-                </div>
-                <div class="skill-item" data-aos="zoom-in" data-aos-delay="600">
-                    <i class="fab fa-python"></i>
-                    <span>Python</span>
-                </div>
-                <div class="skill-item" data-aos="zoom-in" data-aos-delay="700">
-                    <i class="fab fa-bootstrap"></i>
-                    <span>Bootstrap</span>
-                </div>
-                <div class="skill-item" data-aos="zoom-in" data-aos-delay="800">
-                    <i class="fas fa-database"></i>
-                    <span>SQL</span>
-                </div>
-                <div class="skill-item" data-aos="zoom-in" data-aos-delay="900">
-                    <i class="fab fa-git-alt"></i>
-                    <span>Git</span>
-                </div>
-                <div class="skill-item" data-aos="zoom-in" data-aos-delay="1000">
-                    <i class="fab fa-github"></i>
-                    <span>GitHub</span>
-                </div>
-                <div class="skill-item" data-aos="zoom-in" data-aos-delay="1000">
-                    <i class="fab fa-figma"></i>
-                    <span>Figma</span>
-                </div>
-                <div class="skill-item" data-aos="zoom-in" data-aos-delay="1200">
-                    <i class="fa-brands fa-php"></i>
-                    <span>PHP</span>
-                </div>
-            </div>
+        <div>
+          <h4>Design</h4>
+          <p>Criação e edição de materiais gráficos e artes personalizadas para clientes.</p>
         </div>
-    </section>
-
-    <!-- PROJETOS -->
-    <section id="projetos" class="section">
-        <h2>Projetos Recentes</h2>
-        <p>Conheça alguns dos meus trabalhos mais recentes</p>
-
-        <div class="projects-grid">
-
-            <div class="project-card">
-                <img src="./img/fundo.jpg" alt="Dev Experience">
-                <h3>Dev Experience</h3>
-                <div class="techs">
-                    <span>PHP</span>
-                    <span>CSS</span>
-                    <span>MySQL</span>
-                </div>
-                <p>Projeto Dev Experience voltado para aprendizado prático de desenvolvimento web, com desafios e
-                    exercícios interativos para aprimorar habilidades.</p>
-                <a href="https://devexperience.aapmsenaitaubate.com.br/" target="_blank" class="btn primary">Ver
-                    Projeto</a>
-            </div>
-
-
-            <div class="project-card">
-                <img src="./img/projeto-tda.png" alt="Site TDA">
-                <h3>Site TDA</h3>
-                <div class="techs">
-                    <span>HTML</span>
-                    <span>CSS</span>
-                    <span>JavaScript</span>
-                </div>
-                <p>Aplicativo de lista de tarefas interativo com funcionalidades de adicionar, editar e excluir tarefas,
-                    implementa armazenamento local para persistência de dados.</p>
-                <a href="https://kbf0k.github.io/SITE-DO-TDA/" target="_blank" class="btn primary">Ver Projeto</a>
-            </div>
-
-            <div class="project-card">
-                <img src="./img/projeto-pokedex.png" alt="Pokedex">
-                <h3>Pokedex</h3>
-                <div class="techs">
-                    <span>HTML</span>
-                    <span>CSS</span>
-                    <span>JavaScript</span>
-                    <span>API</span>
-                </div>
-                <p>Aplicativo Pokedex interativo que exibe informações detalhadas de Pokémon, incluindo habilidades,
-                    tipos e estatísticas, com design responsivo.</p>
-                <a href="https://yagorgm.github.io/Pokedex/" target="_blank" class="btn primary">Ver Projeto</a>
-            </div>
-
-            <div class="project-card">
-                <img src="./img/projeto-spotify.png" alt="Spotify">
-                <h3>Spotify</h3>
-                <div class="techs">
-                    <span>React</span>
-                    <span>CSS</span>
-                    <span>API</span>
-                </div>
-                <p>Clone simplificado do Spotify, permitindo explorar playlists, tocar músicas e interagir com a API do
-                    Spotify para busca de faixas.</p>
-                <a href="https://yagorgm.github.io/Atividade-Spotify/" target="_blank" class="btn primary">Ver
-                    Projeto</a>
-            </div>
-
-            <div class="project-card">
-                <img src="./img/projeto-matematica.png" alt="Matemática Financeira">
-                <h3>Matemática Financeira</h3>
-                <div class="techs">
-                    <span>HTML</span>
-                    <span>CSS</span>
-                    <span>JavaScript</span>
-                </div>
-                <p>Calculadora de Matemática Financeira para juros simples e compostos, análise de investimentos e
-                    simulações de aplicações financeiras.</p>
-                <a href="https://kbf0k.github.io/MATEMATICA_FINANCEIRA/" target="_blank" class="btn primary">Ver
-                    Projeto</a>
-            </div>
-
-            <div class="project-card">
-                <img src="./img/projeto-youtube.png" alt="Outro Projeto">
-                <h3>Clone Youtube</h3>
-                <div class="techs">
-                    <span>HTML</span>
-                    <span>CSS</span>
-                    <span>JavaScript</span>
-                </div>
-                <p>Projeto adicional com funcionalidades diversas, voltado para aprendizado e demonstração de boas
-                    práticas de desenvolvimento web.</p>
-                <a href="https://yagorgm.github.io/Clone-Youtube/" target="_blank" class="btn primary">Ver Projeto</a>
-            </div>
+        <div>
+          <h4>Atendimento</h4>
+          <p>Contato com clientes, compreensão das solicitações e apoio no encaminhamento das demandas.</p>
         </div>
-    </section>
+      </div>
+    </article>
+  </div>
+</section>
 
-    <!-- CONTATO -->
-    <section id="contato" class="section contact-section">
-        <h2>Contato</h2>
-        <div class="contact-grid">
-            <a href="mailto:yago.roberto2008@gmail.com" class="contact-btn">
-                <i class="fa-solid fa-envelope"></i> E-mail
-            </a>
-            <a href="https://www.linkedin.com/in/yago-moraes/" target="_blank" class="contact-btn linkedin">
-                <i class="fa-brands fa-linkedin"></i> LinkedIn
-            </a>
-            <a href="https://github.com/YagoRGM/" target="_blank" class="contact-btn github">
-                <i class="fa-brands fa-github"></i> GitHub
-            </a>
-        </div>
-    </section>
+<section id="education">
+  <div class="container">
+    <p class="tag-sec">TRAJETÓRIA</p>
+    <h2>Formação e certificações</h2>
+    <div class="grid" id="edu-grid"></div>
+  </div>
+</section>
 
-    <!-- FOOTER -->
-    <footer>
-        <div class="footer-content">
-            <p>© 2025 - Yago Moraes</p>
-            <div class="socials">
-                <a href="https://www.linkedin.com/in/yago-moraes/" target="_blank"><i
-                        class="fa-brands fa-linkedin fa-lg"></i></a>
-                <a href="https://github.com/YagoRGM/" target="_blank"><i class="fa-brands fa-github fa-lg"></i></a>
-                <a href="https://twitter.com/seuusuario" target="_blank"><i class="fa-brands fa-twitter fa-lg"></i></a>
-            </div>
-        </div>
-    </footer>
+<section id="extra" class="alt">
+  <div class="container">
+    <p class="tag-sec">ALÉM DA FACULDADE</p>
+    <h2>Atividades e produção acadêmica</h2>
+    <div class="tl" id="tl"></div>
+  </div>
+</section>
 
-    <script>
-        // HAMBURGER MOBILE
-        const hamburger = document.querySelector('.hamburger');
-        const navMenu = document.querySelector('.nav-menu');
+<section id="contact">
+  <div class="container">
+    <p class="tag-sec">CONTATO</p>
+    <h2>Vamos conversar</h2>
+    <p class="sub">Estou aberto a oportunidades de estágio e colaborações.</p>
+    <div class="links">
+      <a class="cl" href="https://github.com/YagoRGM/" target="_blank" rel="noopener">GitHub: github.com/YagoRGM</a>
+      <a class="cl" href="https://www.linkedin.com/in/yago-moraes/" target="_blank" rel="noopener">LinkedIn: linkedin.com/in/yago-moraes</a>
+      <a class="cl" href="mailto:yago.roberto2008@gmail.com">yago.roberto2008@gmail.com</a>
+    </div>
+  </div>
+</section>
+</main>
 
-        hamburger.addEventListener('click', () => {
-            navMenu.classList.toggle('active');
-        });
+<button id="back-to-top" class="back-to-top" type="button" aria-label="Voltar ao topo" title="Voltar ao topo">↑</button>
+<footer>© 2026 Yago Moraes</footer>
 
-        // FECHA MENU AO CLICAR EM LINK
-        document.querySelectorAll('.nav-link').forEach(link => {
-            link.addEventListener('click', () => {
-                navMenu.classList.remove('active');
-            });
-        });
-    </script>
+<div class="mbg" id="mbg">
+  <div class="modal">
+    <button class="mx" onclick="closeM()" aria-label="Fechar">✕</button>
+    <p class="cat" id="m-cat"></p>
+    <h2 class="m-t" id="m-title"></h2>
+    <div id="m-body"></div>
+    <div class="m-l" id="m-link"></div>
+  </div>
+</div>
+
+<script>
+// Trechos entre [colchetes] aparecem destacados em amarelo: são os campos para você preencher.
+const SKILLS = [
+  { n: "Linguagens", t: ["Python","Java","JavaScript","PHP","SQL","HTML5","CSS3"] },
+  { n: "Frameworks e bibliotecas", t: ["Flask","React","Next.js","Django","Bootstrap"] },
+  { n: "Banco de dados", t: ["MySQL","Modelagem de dados","Consultas SQL"] },
+  { n: "Cloud e infraestrutura", t: ["AWS","Amazon EC2","Docker","Linux"] },
+  { n: "IA e dados", t: ["Ollama","Processamento de linguagem natural","Web Scraping","Machine Learning"] },
+  { n: "Ferramentas", t: ["Git","GitHub","Figma","VS Code"] }
+];
+
+const PROJECTS = [
+  { cat: "API", title: "API 1º Semestre: Bot Gotinha", partner: "[Parceiro interno]",
+    desc: "Chatbot no Telegram para consultar dados públicos de vacinação: calendário, cobertura vacinal e unidades de saúde.",
+    tech: ["Python","Flask","Telegram Bot API","Ollama","Web Scraping"],
+    secs: [
+      ["Empresa parceira", "Parceiro interno"],
+      ["Problema", "Informações públicas sobre vacinação (calendário por faixa etária, cobertura vacinal e localização de UBS) ficam dispersas, o que dificulta o acesso da população a elas."],
+      ["Solução", "Chatbot que reúne essas consultas em um só lugar: vacinas recomendadas por idade, cobertura vacinal e UBS próximas. Usa Ollama para interpretar pedidos escritos livremente pelo usuário."],
+      ["Minhas contribuições", ["Consulta de cobertura vacinal com dados públicos do Ministério da Saúde","Coleta e tratamento desses dados","Integração com o Ollama para processamento de linguagem natural","Integração das funcionalidades e organização dos fluxos de conversa"]],
+      ["Hard skills adquiridas", ["Integração de serviços e APIs","Manipulação e tratamento de dados","Web scraping e automação","Aplicação prática de IA"]],
+      ["Soft skills exercitadas", ["Trabalho em equipe e colaboração durante as sprints", "Comunicação para alinhar integrações e funcionalidades", "Organização e divisão de tarefas", "Autonomia para pesquisar e resolver problemas"]]
+    ], link: "https://github.com/YagoRGM/Projeto-Integrador-I" },
+  { cat: "API", title: "API 2º Semestre: Análise de Crédito", partner: "[empresa parceira]",
+    desc: "Aplicação web para solicitação de cartões, com análise financeira e status do pedido (aprovado, negado ou em análise).",
+    tech: ["Python","Flask","MySQL","JavaScript","Docker"],
+    secs: [
+      ["Empresa parceira", "DM"],
+      ["Problema", "Clientes precisam solicitar cartões e acompanhar o andamento, enquanto a empresa precisa validar dados, avaliar a situação financeira e decidir de forma padronizada se aprova a solicitação."],
+      ["Solução", "Plataforma com fluxo completo: solicitação, validação das informações, análise financeira e resultado com diferentes status."],
+      ["Minhas contribuições", ["Modelagem e implementação do banco MySQL (tabelas e relacionamentos)","Regras de negócio da solicitação de cartões","Lógica de análise financeira e critérios de elegibilidade","Tratamento dos resultados: aprovado, negado ou em análise","Integração entre a camada de dados e o processamento das solicitações"]],
+      ["Hard skills adquiridas", ["Modelagem de banco de dados e SQL","Regras de negócio e análise de requisitos","Lógica de programação","Containerização com Docker"]],
+      ["Soft skills exercitadas", ["Raciocínio lógico para estruturar regras de negócio", "Atenção aos detalhes na validação de dados", "Colaboração e alinhamento com a equipe", "Organização no desenvolvimento e nos testes"]]
+    ], link: "https://github.com/YagoRGM/Projeto-Integrador-II" },
+  { cat: "Acadêmico", title: "SMI: Sistema de Monitoramento Industrial",
+    desc: "Monitoramento de máquinas industriais integrando web, mobile e IoT, com IA e Machine Learning para gerar insights.",
+    tech: ["Web","Mobile","IoT","Banco de Dados","Machine Learning"],
+    secs: [["Visão geral", "Coleta dados de sensores, centraliza em um banco de dados e usa IA e Machine Learning para identificar padrões e apoiar a eficiência operacional e a sustentabilidade."],
+      ["Principais características", ["Monitoramento de máquinas e sensores","Integração entre dispositivos IoT e aplicações","Armazenamento e gestão dos dados","Análise com IA e Machine Learning"]]], link: "https://github.com/ferreirakaique/SMI-WEB" },
+  { cat: "Acadêmico", title: "Dev Experience",
+    desc: "Plataforma para gerenciamento de eventos e inscrições da maratona de programação do curso técnico em Desenvolvimento de Sistemas do SENAI.",
+    tech: ["PHP","MySQL","HTML","CSS","JavaScript"],
+    secs: [["Visão geral", "Plataforma criada para divulgar a maratona de programação realizada no curso técnico do SENAI e centralizar as informações da competição."], ["Funcionalidades", ["Apresentação da competição, etapas e programação", "Gerenciamento de eventos e informações da maratona", "Inscrição de participantes", "Consulta de detalhes para quem deseja conhecer a competição"]], ["Objetivo", "Facilitar o acesso às informações da maratona e organizar o processo de participação em um único ambiente."]],
+    link: "https://devexperience.aapmsenaitaubate.com.br/" },
+  { cat: "Acadêmico", title: "HYPERFORCE — Gestão de Academia",
+    desc: "Sistema completo para gerenciamento de academia, alunos, matrículas, treinos e aulas com personal.",
+    tech: ["Sistema de gestão","Modelagem de dados","Regras de negócio"],
+    secs: [["Visão geral", "O HYPERFORCE é um sistema de gerenciamento de academia pensado para reunir em um só lugar as principais atividades de alunos e da equipe."], ["Funcionalidades", ["Cadastro e matrícula de alunos", "Agendamento de aulas com personal trainer", "Organização de rotinas de treino", "Cadastro e consulta de exercícios", "Gerenciamento de informações da academia"]], ["Objetivo", "Apoiar a organização da academia e facilitar o acompanhamento das atividades e dos treinos dos alunos."]], link: "https://github.com/ferreirakaique/ACADEMIA-KAIQUE-YAGO-MAMUTE" },
+  { cat: "Acadêmico", title: "Portal de História",
+    desc: "Plataforma de estudos de História com conteúdos, videoaulas, atividades, exercícios, minigames e linhas do tempo.",
+    tech: ["HTML","CSS","JavaScript"],
+    secs: [["Visão geral", "Site educacional completo dedicado à disciplina de História, organizado para apoiar os estudos desde conteúdos introdutórios até temas mais aprofundados."], ["Conteúdos e recursos", ["Conteúdos sobre os principais períodos e acontecimentos históricos", "Videoaulas, imagens e linhas do tempo", "Atividades, exercícios e minigames para reforçar o aprendizado", "Área dedicada aos assuntos de História mais cobrados no ENEM"]], ["Objetivo", "Oferecer um ambiente de estudo mais dinâmico, reunindo diferentes formatos de conteúdo e atividades em uma única plataforma."]], link: "https://github.com/ferreirakaique/SENAI-HISTORIA" },
+  { cat: "Pessoal", title: "EventHub",
+    desc: "Plataforma para criar, divulgar e gerenciar eventos, com ambientes para participantes e organizadores. Em desenvolvimento.",
+    tech: ["Python","Flask","MySQL","JavaScript"],
+    secs: [["Principais funcionalidades", ["Cadastro, edição e gestão de eventos","Inscrição e gestão de participantes","Controle de convites e cronogramas","Acompanhamento de inscrições e check-ins","Gestão de certificados","Painel administrativo com indicadores"]]], link: "https://github.com/YagoRGM/EventHub" },
+  { cat: "Pessoal", title: "Sistema de Controle de Estoque",
+    desc: "Aplicação web para organizar produtos e acompanhar movimentações e quantidades.",
+    tech: ["Aplicação Web","Banco de Dados"],
+    secs: [["Visão geral", "Projeto de gerenciamento de estoque que reforçou a prática com sistemas web e dados."]], link: "https://github.com/YagoRGM/STOCK-CONTROL" },
+  { cat: "Pessoal", title: "Pokédex",
+    desc: "Meu primeiro projeto consumindo uma API, usando os dados recebidos para montar uma Pokédex interativa.",
+    tech: ["HTML","CSS","JavaScript","PokéAPI"],
+    secs: [["Visão geral", "Projeto que marcou meu primeiro contato com integração de APIs. A aplicação consulta a PokéAPI e apresenta informações dos Pokémon de forma dinâmica."], ["O que pratiquei", ["Realização de requisições HTTP para uma API externa", "Leitura e utilização de dados em JSON", "Atualização dinâmica da interface com JavaScript", "Organização e apresentação de informações como tipos, habilidades e imagens"]]], link: "https://github.com/YagoRGM/Pokedex/" },
+  { cat: "Pessoal", title: "Spider-Man: The Web of New York",
+    desc: "Projeto de aprendizagem para publicar minha primeira aplicação na AWS e conectar o sistema a um banco de dados em nuvem.",
+    tech: ["HTML5","CSS3","AWS","Amazon EC2","Banco de dados"],
+    secs: [["Visão geral", "Além de desenvolver um site temático sobre o Homem-Aranha, usei o projeto como primeiro contato prático com a AWS e com a publicação de uma aplicação em um ambiente de nuvem."], ["O que pratiquei", ["Configuração de uma instância Amazon EC2", "Publicação e disponibilização da aplicação", "Conexão da aplicação a um banco de dados hospedado na infraestrutura em nuvem", "Primeiros passos com implantação e infraestrutura cloud"]]], link: "https://github.com/YagoRGM/Spider-Man" },
+  { cat: "Pessoal", title: "TechWomans",
+    desc: "Projeto sobre tecnologia e a valorização da participação feminina na área.",
+    tech: ["HTML","CSS","JavaScript"],
+    secs: [["Visão geral", "Exploração de desenvolvimento web, organização de conteúdo e construção de interfaces."]], link: "https://github.com/ferreirakaique/TechWoman" }
+];
+
+const EDU = [
+  { b: "Análise e Desenvolvimento de Sistemas", i: "FATEC São José dos Campos", d: "Cursando o 2º semestre. Foco em desenvolvimento de software, lógica, banco de dados e engenharia de software.", pill: "Em andamento" },
+  { b: "Técnico em Desenvolvimento de Sistemas", i: "SENAI Félix Guisard", d: "Programação, desenvolvimento web, banco de dados e fundamentos de sistemas.", pill: "Concluído em 2025" },
+  { b: "Cisco: IT Essentials 7", i: "Cisco Networking Academy", d: "Hardware, sistemas operacionais, manutenção e suporte técnico.", pill: "Certificado" },
+  { b: "Cisco: Segurança da Informação", i: "Cisco Networking Academy", d: "Segurança digital, ameaças, proteção de dados e boas práticas.", pill: "Certificado" }
+];
+
+const EXTRA = [
+  { p: "Voluntariado", r: "Eventos do Parque de Inovação Tecnológica (PIT)", c: "São José dos Campos, SP", d: "Apoio à organização e à realização de eventos, com contato com profissionais, estudantes e empresas do ecossistema de inovação." },
+  { p: "Produção acadêmica", r: "Inteligência artificial como apoio à geração de código", c: "FATEC São José dos Campos", d: "Artigo sobre o uso de ferramentas de IA como assistentes no desenvolvimento de software, discutindo benefícios, riscos e limites dessa prática. O trabalho aborda a importância de revisar, testar e compreender o código gerado, além das habilidades que o desenvolvedor precisa manter, como pensamento crítico, domínio técnico e capacidade de identificar erros e vulnerabilidades." }
+];
+
+const hl = s => String(s).replace(/\[([^\]]+)\]/g, '<span class="todo">[$1]</span>');
+
+document.getElementById('skills-grid').innerHTML = SKILLS.map(s =>
+  `<div class="card skill"><h3>${s.n}</h3><div class="tags">${s.t.map(x => `<span class="tag">${x}</span>`).join('')}</div></div>`).join('');
+
+document.getElementById('edu-grid').innerHTML = EDU.map(e =>
+  `<div class="card edu"><b>${e.b}</b><p class="i">${e.i}</p><p class="i" style="color:var(--muted)">${e.d}</p><span class="pill">${e.pill}</span></div>`).join('');
+
+document.getElementById('tl').innerHTML = EXTRA.map(e =>
+  `<div class="tli"><p class="tl-p">${e.p}</p><h3 class="tl-r">${hl(e.r)}</h3><p class="tl-c">${e.c}</p><p class="tl-d">${hl(e.d)}</p></div>`).join('');
+
+function render(f = 'all') {
+  document.getElementById('projects-grid').innerHTML = PROJECTS.map((p, i) => ({ p, i }))
+    .filter(({ p }) => f === 'all' || p.cat === f)
+    .map(({ p, i }) => `
+      <article class="card proj" onclick="openM(${i})">
+        <p class="cat c-${p.cat}">${p.cat === 'API' ? 'Projeto integrador' : p.cat}</p>
+        <h3>${p.title}</h3>
+        <p>${p.desc}</p>
+        <div class="tags">${p.tech.map(t => `<span class="tag">${t}</span>`).join('')}</div>
+        <div class="arrow">↗</div>
+      </article>`).join('');
+}
+document.querySelectorAll('.fb').forEach(b => b.addEventListener('click', () => {
+  document.querySelectorAll('.fb').forEach(x => x.classList.remove('on'));
+  b.classList.add('on');
+  render(b.dataset.f);
+}));
+
+function openM(i) {
+  const p = PROJECTS[i];
+  document.getElementById('m-cat').textContent = p.cat === 'API' ? 'Projeto integrador' : p.cat;
+  document.getElementById('m-cat').className = 'cat c-' + p.cat;
+  document.getElementById('m-title').textContent = p.title;
+  let h = p.secs.map(([l, c]) => `<p class="m-s">${l}</p><div class="m-x">${
+    Array.isArray(c) ? '<ul>' + c.map(x => `<li>${x}</li>`).join('') + '</ul>' : hl(c)}</div>`).join('');
+  h += `<p class="m-s">Tecnologias</p><div class="tags">${p.tech.map(t => `<span class="tag">${t}</span>`).join('')}</div>`;
+  document.getElementById('m-body').innerHTML = h;
+  document.getElementById('m-link').innerHTML = p.link
+    ? `<a class="btn btn-o" href="${p.link}" target="_blank" rel="noopener">Ver projeto</a>`
+    : `<span class="project-no-link">Repositório não disponibilizado</span>`;
+  document.getElementById('mbg').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+function closeM() { document.getElementById('mbg').classList.remove('open'); document.body.style.overflow = ''; }
+document.getElementById('mbg').addEventListener('click', e => { if (e.target === e.currentTarget) closeM(); });
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeM(); });
+// Alternância entre tema escuro e claro.
+const themeToggle = document.getElementById('theme-toggle');
+const savedTheme = localStorage.getItem('portfolio-theme');
+if (savedTheme) document.documentElement.dataset.theme = savedTheme;
+
+function updateThemeButton() {
+  const isLight = document.documentElement.dataset.theme === 'light';
+  themeToggle.textContent = isLight ? '☾' : '☼';
+  themeToggle.setAttribute('aria-label', isLight ? 'Ativar modo escuro' : 'Ativar modo claro');
+  themeToggle.title = isLight ? 'Ativar modo escuro' : 'Ativar modo claro';
+}
+
+themeToggle.addEventListener('click', () => {
+  const nextTheme = document.documentElement.dataset.theme === 'light' ? 'dark' : 'light';
+  document.documentElement.dataset.theme = nextTheme;
+  localStorage.setItem('portfolio-theme', nextTheme);
+  updateThemeButton();
+});
+
+updateThemeButton();
+
+// Botão para voltar ao início da página.
+const backToTop = document.getElementById('back-to-top');
+backToTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+window.addEventListener('scroll', () => {
+  backToTop.classList.toggle('visible', window.scrollY > 350);
+});
+render();
+</script>
 </body>
-
 </html>
